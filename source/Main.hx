@@ -6,6 +6,9 @@ import openfl.display.Sprite;
 
 class Main extends Sprite
 {
+         private var gameWidth:Int = 600;
+	private var gameHeight:Int = 800;
+	
 	public function new()
 	{
 		super();
