@@ -12,24 +12,6 @@ class Main extends Sprite
 	public function new()
 	{
 		super();
-		
-
-	
-
-		final ratioX:Float = stageWidth / gameWidth;
-
-		final ratioY:Float = stageHeight / gameHeight;
-
-		final zoom:Float = Math.min(ratioX, ratioY);
-
-		gameWidth = Math.ceil(stageWidth / zoom);
-
-		gameHeight = Math.ceil(stageHeight / zoom);
-
-		addChild(new FlxGame(gameWidth, gameHeight, GameNoTweens, zoom));
-
-	}
-
-}
+		addChild(new FlxGame(0, 0, GameNoTweens));
 	}
 }
